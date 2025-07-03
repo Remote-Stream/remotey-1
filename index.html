@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="مرکز برگزاری آزمون‌های آنلاین بین‌المللی برای مهاجرت تحصیلی و کاری. با ما آینده خود را بسازید.">
+    <meta name="author" content="Online Exam Center">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>مرکز آزمون آنلاین - دروازه شما به سوی آینده</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css"> 
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-Variable-font-face.css" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+        direction: rtl; /* Set direction to right-to-left for Persian text */
+        text-align: right; /* Align text to the right */
+      }
+      .main-nav .nav li a {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Vazirmatn', sans-serif;
+        font-weight: 800;
+      }
+      p, .text, span, label, input, textarea, button {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+      /* Adjustments for RTL layout */
+      .header-text .left-text {
+        text-align: right;
+      }
+      .right-text {
+        text-align: right;
+      }
+      .left-text {
+        text-align: right;
+      }
+      .accordion-head {
+        direction: rtl;
+        text-align: right;
+      }
+      .accordion-head .icon {
+        float: left; /* Move icon to the left for RTL */
+      }
+      .contact-form {
+        direction: rtl;
+        text-align: right;
+      }
+      .contact-field {
+        text-align: right;
+      }
+      .social li {
+        float: right; /* Adjust social icons for RTL */
+        margin-left: 10px;
+        margin-right: 0;
+      }
+      .copyright {
+        float: right; /* Adjust copyright for RTL */
+      }
+      /* Custom styles for new content boxes */
+      .info-box, .feature-item {
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .info-box:hover, .feature-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+      }
+      .info-box h4, .feature-item h4 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #333;
+      }
+      .info-box p, .feature-item p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #666;
+      }
+      .info-box .main-button-small, .feature-item .main-button-small {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 20px;
+        background-color: #57a5ff;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+      .info-box .main-button-small:hover, .feature-item .main-button-small:hover {
+        background-color: #5776ff;
+      }
+      .info-box i, .feature-item i {
+        font-size: 40px;
+        color: #eb8aff;
+        margin-bottom: 15px;
+      }
+      .item-box-hover {
+        margin-bottom: 30px;
+      }
+      .item-box-full {
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+      .item-box-full:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+      }
+      .item-box-full i {
+        font-size: 50px;
+        color: #ae39c6;
+        margin-bottom: 20px;
+      }
+      .item-box-full h6 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .item-box-full p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      /* Debugging for Owl Carousel items - ADD THIS FOR TESTING */
+      .owl-carousel .owl-item {
+          visibility: visible !important;
+          opacity: 1 !important;
+          height: auto !important; /* Ensure items take natural height */
+          min-height: 250px; /* A minimum height to ensure visibility */
+          /* If items are collapsing due to width, add a min-width */
+          /* min-width: 250px; */
+      }
+      .owl-carousel .owl-item .service-item { /* Target the inner content specifically */
+          visibility: visible !important;
+          opacity: 1 !important;
+      }
+      .owl-carousel .owl-item img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      /* Logo specific styles */
+      .main-nav .logo img {
+        height: 30px; /* Adjust as needed */
+        margin-top: -10px; /* Adjust vertical alignment if necessary */
+        vertical-align: middle;
+      }
+      .main-nav .logo {
+        display: flex;
+        height: 30px;
+        margin-top: 23px;
+        align-items: center;
+        gap: 10px; /* Space between logo image and text */
+        font-size: 10px; /* If logo text is still there */
+      }
+    </style>
+
+    </head>
+
+    <body>
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="#" class="logo">
+                            <img src="assets/images/logo.png" alt="لوگو مرکز آزمون آنلاین"> مرکز آزمون آنلاین
+                        </a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">صفحه اصلی</a></li>
+                            <li class="scroll-to-section"><a href="#about">درباره ما</a></li>
+                            <li class="scroll-to-section"><a href="#services">خدمات</a></li>
+                            <li class="scroll-to-section"><a href="#preparation">آمادگی آزمون</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials">نظرات کاربران</a></li>
+                            <li class="scroll-to-section"><a href="#frequently-question">سوالات متداول</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">بیشتر</a>
+                                <ul>
+                                    <li><a href="">مهاجرت تحصیلی</a></li>
+                                    <li><a href="">مهاجرت کاری</a></li>
+                                    <li><a href="">آزمون‌های بین‌المللی</a></li>
+                                    <li><a href="">وبلاگ</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us">تماس با ما</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>منو</span>
+                        </a>
+                        </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="welcome-area" id="welcome">
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>با مرکز آزمون آنلاین، به رویای مهاجرت خود برسید!</h1>
+                        <p>ما با ارائه آزمون‌های آنلاین معتبر بین‌المللی، مسیر شما را برای مهاجرت تحصیلی و کاری هموار می‌کنیم. با اطمینان در آزمون‌ها شرکت کنید و آینده‌ای روشن برای خود بسازید.</p>
+                        <a href="#about" class="main-button-slider">بیشتر بدانید</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="assets/images/slider-icon.png" class="rounded img-fluid d-block mx-auto" alt="Online Exam">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="About Us">
+                </div>
+                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-heading">
+                        <h5>مرکز آزمون آنلاین: راهنمای شما در مسیر مهاجرت</h5>
+                    </div>
+                    <div class="left-text">
+                        <p>در دنیای امروز، مهاجرت تحصیلی و کاری به یکی از مهم‌ترین اهداف بسیاری از افراد تبدیل شده است. مرکز آزمون آنلاین با درک این نیاز، پلتفرمی امن و قابل اعتماد را برای برگزاری آزمون‌های آنلاین بین‌المللی فراهم کرده است. ما به شما کمک می‌کنیم تا با شرکت در آزمون‌های زبان و تخصصی مورد نیاز، مدارک لازم برای پذیرش در دانشگاه‌ها و شرکت‌های خارجی را کسب کنید. <br><br>خدمات ما شامل آماده‌سازی برای آزمون‌ها، برگزاری آزمون‌های آزمایشی و ارائه کارنامه‌های معتبر است تا با بالاترین آمادگی در آزمون اصلی شرکت کنید.</p>
+                        <a href="#about2" class="main-button">کشف کنید</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about2">
+        <div class="container">
+            <div class="row">
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h5>خدمات جامع برای موفقیت شما</h5>
+                    </div>
+                    <p>ما متعهدیم تا تمامی جوانب مورد نیاز شما برای مهاجرت را پوشش دهیم. از آزمون‌های زبان معتبر جهانی گرفته تا آزمون‌های تخصصی مرتبط با رشته و حرفه شما، همه در دسترس شماست.</p>
+                    <ul>
+                        <li>
+                            <img src="assets/images/about-icon-01.png" alt="">
+                            <div class="text">
+                                <h6>آزمون‌های زبان بین‌المللی</h6>
+                                <p>آزمون‌های IELTS، TOEFL، GRE، GMAT و دیگر آزمون‌های معتبر زبان انگلیسی و سایر زبان‌ها برای پذیرش دانشگاهی و مهاجرت کاری.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/about-icon-02.png" alt="">
+                            <div class="text">
+                                <h6>آزمون‌های تخصصی و مهارتی</h6>
+                                <p>برگزاری آزمون‌های تخصصی در رشته‌های مختلف فنی، مهندسی، پزشکی و علوم انسانی برای ارزیابی مهارت‌های شما.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/about-icon-03.png" alt="">
+                            <div class="text">
+                                <h6>مشاوره و پشتیبانی کامل</h6>
+                                <p>تیم متخصص ما در تمامی مراحل، از انتخاب آزمون تا تفسیر نتایج و برنامه‌ریزی برای مهاجرت، در کنار شماست. با <a rel="nofollow" href="#contact-us">تماس با ما</a> از مشاوره‌های رایگان بهره‌مند شوید.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">آمادگی برای مهاجرت تحصیلی</h5>
+                        <p>با آزمون‌های شبیه‌سازی شده و منابع آموزشی ما، خود را برای پذیرش در بهترین دانشگاه‌های دنیا آماده کنید.</p>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">مسیر هموار مهاجرت کاری</h5>
+                        <p>با کسب مدارک معتبر از طریق آزمون‌های ما، شانس خود را برای یافتن شغل مناسب در خارج از کشور افزایش دهید.</p>
+                        <a href="#" class="main-button">کشف کنید</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">آزمون‌های آنلاین با امنیت بالا</h5>
+                        <p>پلتفرم ما با بالاترین استانداردهای امنیتی طراحی شده تا تجربه آزمونی بی‌نقص و عادلانه را برای شما فراهم آورد.</p>
+                        <a href="#" class="main-button">جزئیات بیشتر</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">دسترسی آسان و جهانی</h5>
+                        <p>از هر نقطه جهان می‌توانید به آزمون‌های ما دسترسی داشته باشید و در زمان و مکان دلخواه خود شرکت کنید.</p>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">پشتیبانی 24/7</h5>
+                        <p>تیم پشتیبانی ما هفت روز هفته و 24 ساعته آماده پاسخگویی به سوالات و رفع مشکلات شماست.</p>
+                        <a href="#" class="main-button">کشف کنید</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">نتایج سریع و دقیق</h5>
+                        <p>نتایج آزمون‌های شما در کمترین زمان ممکن و با دقت بالا اعلام می‌شوند تا برنامه‌ریزی‌های خود را به سرعت پیش ببرید.</p>
+                        <a href="#" class="main-button">جزئیات</a>
+                    </div>
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
+                        </div>
+                        <h5 class="service-title">منابع آموزشی رایگان</h5>
+                        <p>دسترسی به مجموعه‌ای از منابع آموزشی و نمونه سوالات برای آمادگی هر چه بهتر شما در آزمون‌ها.</p>
+                        <a href="#" class="main-button">بیشتر بخوانید</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="preparation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>آمادگی جامع برای آزمون‌های شما</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="section-heading">
+                        <p>برای موفقیت در آزمون‌ها، آماده‌سازی اصولی و هدفمند ضروری است. ما در این مسیر شما را تنها نمی‌گذاریم.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item-box-hover">
+                        <div class="item-box-full">
+                            <i class="fa fa-book"></i>
+                            <h6>منابع آموزشی غنی</h6>
+                            <p>دسترسی به کتاب‌های الکترونیکی، ویدئوهای آموزشی و مقالات تخصصی برای تمامی آزمون‌ها.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item-box-hover">
+                        <div class="item-box-full">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <h6>آزمون‌های آزمایشی دقیق</h6>
+                            <p>برگزاری آزمون‌های شبیه‌سازی شده با محیط و زمان‌بندی واقعی آزمون اصلی برای سنجش آمادگی شما.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="item-box-hover">
+                        <div class="item-box-full">
+                            <i class="fa fa-users"></i>
+                            <h6>دوره‌های آمادگی با اساتید مجرب</h6>
+                            <p>شرکت در کلاس‌های آنلاین گروهی و خصوصی با بهترین اساتید، با تمرکز بر تکنیک‌ها و استراتژی‌های آزمون.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="frequently-question">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>سوالات متداول</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="section-heading">
+                        <p>در این بخش به پرتکرارترین سوالات شما در خصوص آزمون‌ها و مهاجرت پاسخ داده‌ایم.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-text col-lg-6 col-md-6 col-sm-12">
+                    <h5>اگر سوالی دارید، ما آماده پاسخگویی هستیم.</h5>
+                    <div class="accordion-text">
+                        <p>ما در مرکز آزمون آنلاین همواره در تلاشیم تا شفافیت کامل را در ارائه خدمات داشته باشیم. اگر سوالی در مورد نحوه ثبت نام، برگزاری آزمون‌ها، اعتبار مدارک یا هر جنبه دیگری از فرایند مهاجرت دارید، تردید نکنید و از طریق راه‌های ارتباطی زیر با ما در تماس باشید. ما به تمامی نیازهای شما پاسخ می‌دهیم تا با اطمینان کامل به سوی آینده‌ای روشن گام بردارید.</p>
+                        <span>ایمیل: <a href="mailto:info@onlineexamcenter.com">info@onlineexamcenter.com</a><br></span>
+                        <a href="#contact-us" class="main-button">تماس با ما</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordions is-first-expanded">
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>چه آزمون‌هایی را می‌توانید از طریق مرکز شما بدهید؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>ما طیف وسیعی از آزمون‌های زبان مانند IELTS، TOEFL، GRE، GMAT و همچنین آزمون‌های تخصصی مورد نیاز برای رشته‌های مختلف را پوشش می‌دهیم. لیست کامل آزمون‌ها در بخش خدمات موجود است.
+                                    <br><br>
+                                    هدف ما پوشش دادن تمامی نیازهای شما برای مهاجرت تحصیلی و کاری است. در صورت نیاز به آزمونی خاص که در لیست ما نیست، می‌توانید با ما تماس بگیرید.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>آیا نتایج آزمون‌های شما در سطح بین‌المللی معتبر هستند؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>بله، تمامی آزمون‌های برگزار شده در مرکز آزمون آنلاین دارای اعتبار بین‌المللی هستند و توسط دانشگاه‌ها، موسسات آموزشی و کارفرمایان در سراسر جهان پذیرفته می‌شوند.
+                                    <br><br>
+                                    ما با مراکز معتبر جهانی همکاری داریم تا اطمینان حاصل کنیم مدارک شما کاملاً قابل استناد و معتبر باشند.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>چگونه می‌توانم برای آزمون‌ها آماده شوم؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>ما برای آمادگی شما، منابع آموزشی جامع، نمونه سوالات و آزمون‌های آزمایشی را ارائه می‌دهیم. همچنین، می‌توانید از دوره‌های آمادگی آنلاین ما که توسط اساتید مجرب تدریس می‌شوند، استفاده کنید.
+                                    <br><br>
+                                    توصیه می‌کنیم پیش از شرکت در آزمون اصلی، در آزمون‌های آزمایشی ما شرکت کنید تا با محیط و نحوه سوالات آشنا شوید.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>چه مدارکی برای ثبت نام و شرکت در آزمون نیاز است؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>به طور کلی، برای ثبت نام نیاز به مدارک هویتی معتبر مانند پاسپورت یا کارت ملی و همچنین پرداخت هزینه آزمون خواهید داشت. جزئیات دقیق‌تر برای هر آزمون در صفحه مربوطه ذکر شده است.
+                                    <br><br>
+                                    در صورت نیاز به مدارک خاص دیگر، پیش از ثبت نام به شما اطلاع داده خواهد شد.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>آیا پس از آزمون، مشاوره مهاجرتی ارائه می‌دهید؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>بله، تیم مشاوران ما آماده ارائه مشاوره در خصوص مراحل بعدی مهاجرت، شامل انتخاب دانشگاه، ارسال درخواست و فرآیندهای ویزا هستند.
+                                    <br><br>
+                                    ما در تلاشیم تا تجربه‌ای جامع و بی‌دغدغه را از شروع تا پایان فرآیند مهاجرت برای شما فراهم آوریم.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>چگونه می‌توانم با پشتیبانی شما در تماس باشم؟</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>شما می‌توانید از طریق ایمیل، تلفن یا فرم تماس موجود در سایت با ما در ارتباط باشید. تیم پشتیبانی ما در اسرع وقت پاسخگوی سوالات شما خواهد بود.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>نظرات کاربران موفق</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="section-heading">
+                        <p>داستان‌های موفقیت آمیز کاربرانی که با کمک مرکز آزمون آنلاین به اهداف مهاجرتی خود رسیده‌اند.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="testimonial-content">
+                                <p>"تجربه من با مرکز آزمون آنلاین بی‌نظیر بود. پشتیبانی فوق‌العاده و محیط آزمون حرفه‌ای، استرس من را به حداقل رساند و توانستم نمره مورد نظرم را در آیلتس کسب کنم."</p>
+                                <h6>رضا احمدی - مهاجرت تحصیلی به کانادا</h6>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="testimonial-content">
+                                <p>"با کمک منابع آموزشی و آزمون‌های آزمایشی این مرکز، توانستم برای آزمون GRE آماده شوم و در دانشگاه مورد علاقه‌ام پذیرش بگیرم. واقعا سپاسگزارم!"</p>
+                                <h6>سارا قاسمی - مهاجرت تحصیلی به آلمان</h6>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="testimonial-content">
+                                <p>"به عنوان یک مهندس، نیاز به مدرک زبان معتبر برای مهاجرت کاری داشتم. مرکز آزمون آنلاین نه تنها آزمون‌های مورد نیاز را فراهم کرد، بلکه با مشاوره‌هایشان مسیر مهاجرتم را هموار ساختند."</p>
+                                <h6>علی محمدی - مهاجرت کاری به استرالیا</h6>
+                            </div>
+                        </div>
+                         <div class="item service-item">
+                            <div class="testimonial-content">
+                                <p>"فرایند ثبت نام و شرکت در آزمون بسیار ساده و روان بود. نتیجه را هم سریع دریافت کردم و توانستم به موقع برای ویزا اقدام کنم. تشکر از تیم حرفه‌ای مرکز آزمون آنلاین."</p>
+                                <h6>فاطمه رضایی - مهاجرت تحصیلی به انگلستان</h6>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="testimonial-content">
+                                <p>"پشتیبانی فنی در طول آزمون عالی بود. هیچ مشکلی پیش نیامد و با آرامش کامل آزمونم را دادم. این مرکز را به همه دوستانم که قصد مهاجرت دارند توصیه می‌کنم."</p>
+                                <h6>محسن کریمی - مهاجرت کاری به سوئد</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="why-choose-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>چرا مرکز آزمون آنلاین را انتخاب کنید؟</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="section-heading">
+                        <p>انتخاب یک پلتفرم مطمئن برای آزمون‌های بین‌المللی، اولین قدم به سوی موفقیت است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h4>اعتبار و امنیت بالا</h4>
+                        <p>آزمون‌های ما با همکاری سازمان‌های بین‌المللی معتبر برگزار شده و امنیت اطلاعات شما تضمین می‌شود.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h4>دسترسی جهانی</h4>
+                        <p>بدون محدودیت جغرافیایی، از هر کجای دنیا می‌توانید در آزمون‌های ما شرکت کنید.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <h4>صرفه‌جویی در زمان و هزینه</h4>
+                        <p>دیگر نیازی به سفرهای طولانی و هزینه‌های اضافی برای شرکت در آزمون‌های حضوری نیست.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-support"></i>
+                        </div>
+                        <h4>پشتیبانی تخصصی</h4>
+                        <p>تیم پشتیبانی ما در تمام مراحل ثبت نام تا اعلام نتایج، آماده پاسخگویی به سوالات شماست.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <h4>گزارش‌های تحلیلی عملکرد</h4>
+                        <p>پس از هر آزمون، گزارشی جامع از عملکرد شما ارائه می‌شود تا نقاط قوت و ضعف خود را بشناسید.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-item">
+                        <div class="icon">
+                            <i class="fa fa-calendar-check-o"></i>
+                        </div>
+                        <h4>تقویم آزمون‌های منعطف</h4>
+                        <p>امکان انتخاب تاریخ و زمان آزمون متناسب با برنامه شما، برای آمادگی بیشتر.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="migration-resources">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>منابع و راهنمای مهاجرت</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="section-heading">
+                        <p>علاوه بر آزمون‌ها، ما منابع مفیدی برای راهنمایی شما در مسیر مهاجرت تحصیلی و کاری فراهم کرده‌ایم.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="info-box">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h4>راهنمای کامل مهاجرت تحصیلی</h4>
+                        <p>اطلاعات جامع درباره انواع ویزاهای تحصیلی، بورسیه‌های دانشگاهی، مدارک لازم و مراحل درخواست پذیرش.</p>
+                        <a href="#" class="main-button-small">مطالعه بیشتر</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="info-box">
+                        <i class="fa fa-briefcase"></i>
+                        <h4>راهنمای جامع مهاجرت کاری</h4>
+                        <p>معرفی فرصت‌های شغلی در کشورهای مختلف، نحوه کاریابی، انواع ویزاهای کاری و قوانین مربوط به اقامت.</p>
+                        <a href="#" class="main-button-small">مطالعه بیشتر</a>
+                    </div>
+                </div>
+                 <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="info-box">
+                        <i class="fa fa-newspaper-o"></i>
+                        <h4>آخرین اخبار و تغییرات قوانین مهاجرت</h4>
+                        <p>با مطالعه بخش اخبار و وبلاگ ما، از جدیدترین تغییرات در قوانین مهاجرتی کشورهای مختلف مطلع شوید.</p>
+                        <a href="#" class="main-button-small">مشاهده وبلاگ</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="info-box">
+                        <i class="fa fa-comments"></i>
+                        <h4>پرسش و پاسخ با کارشناسان مهاجرت</h4>
+                        <p>فرصتی برای طرح سوالات خود به صورت مستقیم با مشاوران و متخصصان حوزه مهاجرت.</p>
+                        <a href="#" class="main-button-small">مشاوره رایگان</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6476.779623479314!2d51.3159836!3d35.7412225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfd081d71b9ef%3A0x54b51dc4580dd8aa!2sRonak%20Music%20School!5e0!3m2!1sen!2s!4v1751497993640!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="post">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="نام و نام خانوادگی" required="" class="contact-field">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="text" id="email" placeholder="ایمیل" required="" class="contact-field">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="پیام شما" required="" class="contact-field"></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">ارسال پیام</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p class="copyright">کپی رایت © 2025 مرکز آزمون آنلاین
+                    . طراحی توسط: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script> <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+ </html>
